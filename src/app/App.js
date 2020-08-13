@@ -1,15 +1,12 @@
 import React, {Component} from 'react';
 import './app.less';
-import {Route, BrowserRouter} from "react-router-dom";
-import Home from "./Home";
+import Header from "./header/Header";
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <BrowserRouter>
-          <Route exact path='/' component={Home}/>
-        </BrowserRouter>
+          <Header />
       </div>
     );
   }
